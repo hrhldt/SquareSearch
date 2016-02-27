@@ -7,13 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3DEA123D1C81B40D2B56A79A /* libPods-FourSquareSearch.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 46C8DE31F75091CC79716E93 /* libPods-FourSquareSearch.a */; };
 		5BEE36C01C7F82C4008560BC /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE36BF1C7F82C4008560BC /* main.m */; };
 		5BEE36C31C7F82C4008560BC /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE36C21C7F82C4008560BC /* AppDelegate.m */; };
-		5BEE36C61C7F82C4008560BC /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE36C51C7F82C4008560BC /* ViewController.m */; };
 		5BEE36C91C7F82C4008560BC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BEE36C71C7F82C4008560BC /* Main.storyboard */; };
 		5BEE36CB1C7F82C4008560BC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5BEE36CA1C7F82C4008560BC /* Assets.xcassets */; };
 		5BEE36CE1C7F82C4008560BC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5BEE36CC1C7F82C4008560BC /* LaunchScreen.storyboard */; };
 		5BEE36D91C7F82C4008560BC /* FourSquareSearchTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE36D81C7F82C4008560BC /* FourSquareSearchTests.m */; };
+		5BEE36FF1C81F032008560BC /* FSNetwork.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE36FE1C81F032008560BC /* FSNetwork.m */; };
+		5BEE37031C81F57C008560BC /* FSSearchController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE37021C81F57C008560BC /* FSSearchController.m */; };
+		5BEE37071C81F706008560BC /* FSSearchPresenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE37061C81F706008560BC /* FSSearchPresenter.m */; };
+		5BEE370D1C820302008560BC /* FSLocation.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE370C1C820302008560BC /* FSLocation.m */; };
+		5BEE37101C82030E008560BC /* FSVenue.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE370F1C82030E008560BC /* FSVenue.m */; };
+		5BEE37131C820340008560BC /* FSContact.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE37121C820340008560BC /* FSContact.m */; };
+		5BEE37161C820384008560BC /* FSModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE37151C820384008560BC /* FSModel.m */; };
+		5BEE371A1C8208D1008560BC /* FSLocationManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 5BEE37191C8208D1008560BC /* FSLocationManager.m */; };
+		F6509E00392865A935D76FE2 /* libPods-FourSquareSearchTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9FB663E748D5F4FC55C8D18B /* libPods-FourSquareSearchTests.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,12 +36,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		46C8DE31F75091CC79716E93 /* libPods-FourSquareSearch.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FourSquareSearch.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BEE36BB1C7F82C4008560BC /* FourSquareSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FourSquareSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BEE36BF1C7F82C4008560BC /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		5BEE36C11C7F82C4008560BC /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		5BEE36C21C7F82C4008560BC /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		5BEE36C41C7F82C4008560BC /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		5BEE36C51C7F82C4008560BC /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		5BEE36C81C7F82C4008560BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		5BEE36CA1C7F82C4008560BC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5BEE36CD1C7F82C4008560BC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -40,6 +48,28 @@
 		5BEE36D41C7F82C4008560BC /* FourSquareSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FourSquareSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		5BEE36D81C7F82C4008560BC /* FourSquareSearchTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FourSquareSearchTests.m; sourceTree = "<group>"; };
 		5BEE36DA1C7F82C4008560BC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5BEE36FD1C81F032008560BC /* FSNetwork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSNetwork.h; sourceTree = "<group>"; };
+		5BEE36FE1C81F032008560BC /* FSNetwork.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSNetwork.m; sourceTree = "<group>"; };
+		5BEE37011C81F57C008560BC /* FSSearchController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSSearchController.h; sourceTree = "<group>"; };
+		5BEE37021C81F57C008560BC /* FSSearchController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSSearchController.m; sourceTree = "<group>"; };
+		5BEE37051C81F706008560BC /* FSSearchPresenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSSearchPresenter.h; sourceTree = "<group>"; };
+		5BEE37061C81F706008560BC /* FSSearchPresenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSSearchPresenter.m; sourceTree = "<group>"; };
+		5BEE37091C81F81F008560BC /* FSSearchView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FSSearchView.h; sourceTree = "<group>"; };
+		5BEE370B1C820302008560BC /* FSLocation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSLocation.h; sourceTree = "<group>"; };
+		5BEE370C1C820302008560BC /* FSLocation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSLocation.m; sourceTree = "<group>"; };
+		5BEE370E1C82030E008560BC /* FSVenue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSVenue.h; sourceTree = "<group>"; };
+		5BEE370F1C82030E008560BC /* FSVenue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSVenue.m; sourceTree = "<group>"; };
+		5BEE37111C820340008560BC /* FSContact.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSContact.h; sourceTree = "<group>"; };
+		5BEE37121C820340008560BC /* FSContact.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSContact.m; sourceTree = "<group>"; };
+		5BEE37141C820384008560BC /* FSModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSModel.h; sourceTree = "<group>"; };
+		5BEE37151C820384008560BC /* FSModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSModel.m; sourceTree = "<group>"; };
+		5BEE37181C8208D1008560BC /* FSLocationManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FSLocationManager.h; sourceTree = "<group>"; };
+		5BEE37191C8208D1008560BC /* FSLocationManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FSLocationManager.m; sourceTree = "<group>"; };
+		6DC6D30A698E3D4C45765E03 /* Pods-FourSquareSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourSquareSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FourSquareSearch/Pods-FourSquareSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		9FB663E748D5F4FC55C8D18B /* libPods-FourSquareSearchTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-FourSquareSearchTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		CBC4201D5DEC1A36C8FCCA2C /* Pods-FourSquareSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourSquareSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-FourSquareSearchTests/Pods-FourSquareSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		CE4A5791FB7DFC6AC3B906F7 /* Pods-FourSquareSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourSquareSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-FourSquareSearch/Pods-FourSquareSearch.release.xcconfig"; sourceTree = "<group>"; };
+		D253F76BDFB22697A615CB0C /* Pods-FourSquareSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FourSquareSearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-FourSquareSearchTests/Pods-FourSquareSearchTests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +77,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3DEA123D1C81B40D2B56A79A /* libPods-FourSquareSearch.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -54,18 +85,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6509E00392865A935D76FE2 /* libPods-FourSquareSearchTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		128218028BC38FC0E08F6B77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				46C8DE31F75091CC79716E93 /* libPods-FourSquareSearch.a */,
+				9FB663E748D5F4FC55C8D18B /* libPods-FourSquareSearchTests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		5157E33397F6E2065007288D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6DC6D30A698E3D4C45765E03 /* Pods-FourSquareSearch.debug.xcconfig */,
+				CE4A5791FB7DFC6AC3B906F7 /* Pods-FourSquareSearch.release.xcconfig */,
+				CBC4201D5DEC1A36C8FCCA2C /* Pods-FourSquareSearchTests.debug.xcconfig */,
+				D253F76BDFB22697A615CB0C /* Pods-FourSquareSearchTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		5BEE36B21C7F82C4008560BC = {
 			isa = PBXGroup;
 			children = (
 				5BEE36BD1C7F82C4008560BC /* FourSquareSearch */,
 				5BEE36D71C7F82C4008560BC /* FourSquareSearchTests */,
 				5BEE36BC1C7F82C4008560BC /* Products */,
+				5157E33397F6E2065007288D /* Pods */,
+				128218028BC38FC0E08F6B77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -81,10 +135,12 @@
 		5BEE36BD1C7F82C4008560BC /* FourSquareSearch */ = {
 			isa = PBXGroup;
 			children = (
+				5BEE37001C81F57C008560BC /* ViewControllers */,
+				5BEE370A1C8202F3008560BC /* Models */,
+				5BEE36E31C7F8321008560BC /* Network */,
+				5BEE37171C8208C6008560BC /* LocationManager */,
 				5BEE36C11C7F82C4008560BC /* AppDelegate.h */,
 				5BEE36C21C7F82C4008560BC /* AppDelegate.m */,
-				5BEE36C41C7F82C4008560BC /* ViewController.h */,
-				5BEE36C51C7F82C4008560BC /* ViewController.m */,
 				5BEE36C71C7F82C4008560BC /* Main.storyboard */,
 				5BEE36CA1C7F82C4008560BC /* Assets.xcassets */,
 				5BEE36CC1C7F82C4008560BC /* LaunchScreen.storyboard */,
@@ -111,6 +167,59 @@
 			path = FourSquareSearchTests;
 			sourceTree = "<group>";
 		};
+		5BEE36E31C7F8321008560BC /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				5BEE36FD1C81F032008560BC /* FSNetwork.h */,
+				5BEE36FE1C81F032008560BC /* FSNetwork.m */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		5BEE37001C81F57C008560BC /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				5BEE37041C81F6F1008560BC /* ViewPresenter */,
+				5BEE37011C81F57C008560BC /* FSSearchController.h */,
+				5BEE37021C81F57C008560BC /* FSSearchController.m */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		5BEE37041C81F6F1008560BC /* ViewPresenter */ = {
+			isa = PBXGroup;
+			children = (
+				5BEE37051C81F706008560BC /* FSSearchPresenter.h */,
+				5BEE37061C81F706008560BC /* FSSearchPresenter.m */,
+				5BEE37091C81F81F008560BC /* FSSearchView.h */,
+			);
+			path = ViewPresenter;
+			sourceTree = "<group>";
+		};
+		5BEE370A1C8202F3008560BC /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				5BEE37141C820384008560BC /* FSModel.h */,
+				5BEE37151C820384008560BC /* FSModel.m */,
+				5BEE370B1C820302008560BC /* FSLocation.h */,
+				5BEE370C1C820302008560BC /* FSLocation.m */,
+				5BEE370E1C82030E008560BC /* FSVenue.h */,
+				5BEE370F1C82030E008560BC /* FSVenue.m */,
+				5BEE37111C820340008560BC /* FSContact.h */,
+				5BEE37121C820340008560BC /* FSContact.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		5BEE37171C8208C6008560BC /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				5BEE37181C8208D1008560BC /* FSLocationManager.h */,
+				5BEE37191C8208D1008560BC /* FSLocationManager.m */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -118,9 +227,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BEE36DD1C7F82C4008560BC /* Build configuration list for PBXNativeTarget "FourSquareSearch" */;
 			buildPhases = (
+				77C8C892E12AD3B3EEE6E241 /* Check Pods Manifest.lock */,
 				5BEE36B71C7F82C4008560BC /* Sources */,
 				5BEE36B81C7F82C4008560BC /* Frameworks */,
 				5BEE36B91C7F82C4008560BC /* Resources */,
+				A7A97E8033BA8BD3183AF365 /* Embed Pods Frameworks */,
+				F57C0ECABCF7C4B3DC43EBD3 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -135,9 +247,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 5BEE36E01C7F82C4008560BC /* Build configuration list for PBXNativeTarget "FourSquareSearchTests" */;
 			buildPhases = (
+				A81FAD9F7FC839F44A66EA14 /* Check Pods Manifest.lock */,
 				5BEE36D01C7F82C4008560BC /* Sources */,
 				5BEE36D11C7F82C4008560BC /* Frameworks */,
 				5BEE36D21C7F82C4008560BC /* Resources */,
+				CD4EDA7DC618534F2E66130D /* Embed Pods Frameworks */,
+				9F15C7848CAF755E460F8B45 /* Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -206,14 +321,114 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		77C8C892E12AD3B3EEE6E241 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9F15C7848CAF755E460F8B45 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FourSquareSearchTests/Pods-FourSquareSearchTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A7A97E8033BA8BD3183AF365 /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FourSquareSearch/Pods-FourSquareSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		A81FAD9F7FC839F44A66EA14 /* Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		CD4EDA7DC618534F2E66130D /* Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FourSquareSearchTests/Pods-FourSquareSearchTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F57C0ECABCF7C4B3DC43EBD3 /* Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-FourSquareSearch/Pods-FourSquareSearch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		5BEE36B71C7F82C4008560BC /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5BEE36C61C7F82C4008560BC /* ViewController.m in Sources */,
+				5BEE36FF1C81F032008560BC /* FSNetwork.m in Sources */,
+				5BEE37101C82030E008560BC /* FSVenue.m in Sources */,
 				5BEE36C31C7F82C4008560BC /* AppDelegate.m in Sources */,
+				5BEE37131C820340008560BC /* FSContact.m in Sources */,
 				5BEE36C01C7F82C4008560BC /* main.m in Sources */,
+				5BEE37071C81F706008560BC /* FSSearchPresenter.m in Sources */,
+				5BEE371A1C8208D1008560BC /* FSLocationManager.m in Sources */,
+				5BEE37031C81F57C008560BC /* FSSearchController.m in Sources */,
+				5BEE37161C820384008560BC /* FSModel.m in Sources */,
+				5BEE370D1C820302008560BC /* FSLocation.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -337,6 +552,7 @@
 		};
 		5BEE36DE1C7F82C4008560BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6DC6D30A698E3D4C45765E03 /* Pods-FourSquareSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FourSquareSearch/Info.plist;
@@ -348,6 +564,7 @@
 		};
 		5BEE36DF1C7F82C4008560BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CE4A5791FB7DFC6AC3B906F7 /* Pods-FourSquareSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = FourSquareSearch/Info.plist;
@@ -359,6 +576,7 @@
 		};
 		5BEE36E11C7F82C4008560BC /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = CBC4201D5DEC1A36C8FCCA2C /* Pods-FourSquareSearchTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FourSquareSearchTests/Info.plist;
@@ -371,6 +589,7 @@
 		};
 		5BEE36E21C7F82C4008560BC /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D253F76BDFB22697A615CB0C /* Pods-FourSquareSearchTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				INFOPLIST_FILE = FourSquareSearchTests/Info.plist;
@@ -400,6 +619,7 @@
 				5BEE36DF1C7F82C4008560BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5BEE36E01C7F82C4008560BC /* Build configuration list for PBXNativeTarget "FourSquareSearchTests" */ = {
 			isa = XCConfigurationList;
@@ -408,6 +628,7 @@
 				5BEE36E21C7F82C4008560BC /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
