@@ -20,7 +20,6 @@ static NSString *kFoursquareClientSecret = @"RVQUH5YZQY0FEVOFLOKRWFNHGO4NCZNKIWN
 static NSString *kBaseURL = @"https://api.foursquare.com/v2";
 
 #pragma mark - Network calls
-
 + (void)requestPlacesWithSearchQuery:(NSString *)searchQuery delegate:(id<FSNetworkDelegate>)delegate {
     NSString *latLngQuery = [[FSLocationManager sharedInstance] currentLocationString];
     NSString *query = [NSString stringWithFormat:@"venues/search?client_id=%@&client_secret=%@&v=%@&ll=%@&query=%@", kFoursquareClientID, kFoursquareClientSecret, kFoursquareAPIVersion, latLngQuery, searchQuery];
