@@ -9,6 +9,12 @@
 #import <Foundation/Foundation.h>
 #import <CoreLocation/CoreLocation.h>
 
+@protocol FSLocationManagerDelegate <NSObject>
+
+- (void)locationManagerDidLoadUserLocation;
+
+@end
+
 @interface FSLocationManager : NSObject <CLLocationManagerDelegate>
 
 + (FSLocationManager *)sharedInstance;
