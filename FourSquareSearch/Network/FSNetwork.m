@@ -15,8 +15,8 @@
 static NSInteger kParsingError = 10999;
 static AFHTTPSessionManager *sharedOperationManager;
 static NSString *kFoursquareAPIVersion = @"20130185";
-static NSString *kFoursquareClientID = @"Q0OAHSWUKMWG5XFCEWEOPN3WLVGPNYTSLSPYM0SXMHFXH54S";
-static NSString *kFoursquareClientSecret = @"RVQUH5YZQY0FEVOFLOKRWFNHGO4NCZNKIWN5PIYZCZFONV1X";
+static NSString *kFoursquareClientID = @"xx";
+static NSString *kFoursquareClientSecret = @"xx";
 static NSString *kBaseURL = @"https://api.foursquare.com/v2";
 
 #pragma mark - Network calls
