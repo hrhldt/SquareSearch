@@ -34,29 +34,47 @@ static FSLocationManager *instance;
 }
 
 - (void)startLocationUpdates {
-    [self.locationManager requestWhenInUseAuthorization];
-    [self.locationManager startUpdatingLocation];
+    if ( [CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedWhenInUse ) {
+        [self.locationManager startUpdatingLocation];
+    } else {
+        [self.locationManager requestWhenInUseAuthorization];
+    }
 }
 
 - (NSString *)currentLocationString {
     return [[NSUserDefaults standardUserDefaults] objectForKey:kLocationCoordinateKey];
 }
 
-- (void)saveCurrentLocation:(CLLocation*)location {
+- (NSString *)latLngStringByLocation:(CLLocation*)location {
 
-    NSString *llString = [NSString stringWithFormat:@"%f,%f", location.coordinate.latitude, location.coordinate.longitude];
-    [[NSUserDefaults standardUserDefaults] setObject:llString forKey:kLocationCoordinateKey];
-    [[NSUserDefaults standardUserDefaults] synchronize];
+    if (location) {
+        NSString *llString = [NSString stringWithFormat:@"%f,%f", location.coordinate.latitude, location.coordinate.longitude];
+        return llString;
+    } else {
+        return @"";
+    }
 }
 
 #pragma mark - Location manager delegate
 
 - (void)locationManager:(CLLocationManager *)manager didChangeAuthorizationStatus:(CLAuthorizationStatus)status {
-    
+    if ( status == kCLAuthorizationStatusDenied ) {
+        if ( self.delegate && [self.delegate respondsToSelector:@selector(locationManagerDidFailToAuthForLocationUpdates)] ) {
+            [self.delegate locationManagerDidFailToAuthForLocationUpdates];
+        }
+    } else if ( status == kCLAuthorizationStatusAuthorizedWhenInUse ) {
+        [self startLocationUpdates];
+        
+        if ( self.delegate && [self.delegate respondsToSelector:@selector(locationManagerDidAuthorizeForLocationUpdates)] ) {
+            [self.delegate locationManagerDidAuthorizeForLocationUpdates];
+        }
+    }
 }
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray<CLLocation *> *)locations {
-    [self saveCurrentLocation:locations[0]];
+    if ( self.delegate && [self.delegate respondsToSelector:@selector(locationManagerDidLoadUserLocation:)] ) {
+        [self.delegate locationManagerDidLoadUserLocation:[self latLngStringByLocation:locations[0]]];
+    }
 }
 
 - (void)locationManagerDidPauseLocationUpdates:(CLLocationManager *)manager {

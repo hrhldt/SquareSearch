@@ -21,6 +21,7 @@ static NSString *kCellIdentifier = @"Cell";
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     [self initView];
+    [self initOverlayView];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -32,6 +33,20 @@ static NSString *kCellIdentifier = @"Cell";
 
 - (void)initView {
     self.presenter = [[FSSearchPresenter alloc] initWithView:self];
+}
+
+- (void)initOverlayView {
+    self.overlayView = [[UIView alloc] initWithFrame:self.view.bounds];
+    self.overlayView.backgroundColor = [UIColor colorWithWhite:0 alpha:0.99];
+    [[UIApplication sharedApplication].keyWindow addSubview:self.overlayView];
+}
+
+- (void)hideOverlayView {
+    [UIView animateWithDuration:0.5 animations:^{
+        self.overlayView.alpha = 0;
+    } completion:^(BOOL finished) {
+        [self.overlayView removeFromSuperview];
+    }];
 }
 
 #pragma mark - TableView Delegate
@@ -55,6 +70,18 @@ static NSString *kCellIdentifier = @"Cell";
 - (void)onDataRecieved:(NSMutableArray *)data {
     self.data = data;
     [self.tableView reloadData];
+}
+
+- (void)onLocationRecieved {
+    [self hideOverlayView];
+}
+
+- (void)onLocationUpdatesAuth {
+    [self hideOverlayView];
+}
+
+- (void)onLocationError:(NSString *)locationError {
+    [[[UIAlertView alloc] initWithTitle:locationError message:nil delegate:nil cancelButtonTitle:@"Okay" otherButtonTitles: nil] show];
 }
 
 - (void)onNetworkError:(NSString *)errorMessage {

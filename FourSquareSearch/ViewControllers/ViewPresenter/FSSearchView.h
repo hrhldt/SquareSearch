@@ -14,8 +14,9 @@
 
 @protocol FSSearchView <NSObject>
 
+- (void)onLocationUpdatesAuth;
 - (void)onLocationRecieved;
-- (void)onLocationError;
+- (void)onLocationError:(NSString *)locationError;
 - (void)onConnectionError;
 - (void)onDataRecieved:(NSMutableArray *)data;
 - (void)onNetworkError:(NSString *)errorMessage;

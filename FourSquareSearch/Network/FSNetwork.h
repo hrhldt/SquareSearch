@@ -21,6 +21,6 @@
 
 @interface FSNetwork : NSObject
 
-+ (void)requestPlacesWithSearchQuery:(NSString *)query delegate:(id<FSNetworkDelegate>)delegate;
++ (void)requestPlacesWithSearchQuery:(NSString *)searchQuery latLngQuery:(NSString *)latLngQuery delegate:(id<FSNetworkDelegate>)delegate;
 
 @end

@@ -11,7 +11,10 @@
 
 @protocol FSLocationManagerDelegate <NSObject>
 
-- (void)locationManagerDidLoadUserLocation;
+@optional
+- (void)locationManagerDidLoadUserLocation:(NSString *)latLngString;
+- (void)locationManagerDidFailToAuthForLocationUpdates;
+- (void)locationManagerDidAuthorizeForLocationUpdates;
 
 @end
 
@@ -22,5 +25,6 @@
 - (NSString *)currentLocationString;
 
 @property (strong, nonatomic) CLLocationManager *locationManager;
+@property (weak, nonatomic) id<FSLocationManagerDelegate> delegate;
 
 @end

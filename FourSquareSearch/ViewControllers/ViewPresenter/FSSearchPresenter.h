@@ -11,7 +11,7 @@
 #import "FSNetwork.h"
 #import "FSLocationManager.h"
 
-@interface FSSearchPresenter : NSObject <FSNetworkDelegate>
+@interface FSSearchPresenter : NSObject <FSNetworkDelegate, FSLocationManagerDelegate>
 
 - (id)initWithView:(id<FSSearchView>)searchView;
 - (void)searchWithQuery:(NSString *)searchQuery;

@@ -21,9 +21,7 @@ static NSString *kBaseURL = @"https://api.foursquare.com/v2";
 
 #pragma mark - Network calls
 
-+ (void)requestPlacesWithSearchQuery:(NSString *)searchQuery delegate:(id<FSNetworkDelegate>)delegate {
-    
-    NSString *latLngQuery = [[FSLocationManager sharedInstance] currentLocationString];
++ (void)requestPlacesWithSearchQuery:(NSString *)searchQuery latLngQuery:(NSString *)latLngQuery delegate:(id<FSNetworkDelegate>)delegate {
     NSString *query = [NSString stringWithFormat:@"venues/search?client_id=%@&client_secret=%@&v=%@&ll=%@&query=%@", kFoursquareClientID, kFoursquareClientSecret, kFoursquareAPIVersion, latLngQuery, searchQuery];
     #warning deprecated
     query = [query stringByAddingPercentEscapesUsingEncoding:NSUTF8StringEncoding];

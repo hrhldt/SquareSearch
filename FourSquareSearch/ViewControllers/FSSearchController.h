@@ -14,6 +14,6 @@
 @property (strong, nonatomic) FSSearchPresenter *presenter;
 @property (strong, nonatomic) NSMutableArray *data;
 @property (weak, nonatomic) IBOutlet UISearchBar *searchBar;
-
+@property (strong, nonatomic) UIView *overlayView;
 @end
 
